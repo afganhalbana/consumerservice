@@ -1,0 +1,42 @@
+[{
+  "id" : "0dacc65a-acb9-484c-b22b-07835d59156c",
+  "request" : {
+    "urlPath" : "/temperature",
+    "method" : "GET",
+    "queryParameters" : {
+      "type" : {
+        "matches" : "([CKRF]{1})"
+      }
+    }
+  },
+  "response" : {
+    "status" : 201,
+    "body" : "{\"temprature\":1.0,\"unitName\":\"C\"}",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "0dacc65a-acb9-484c-b22b-07835d59156c"
+},
+{
+  "id" : "58928f16-d1d6-4f6b-8a88-749b1b3785a2",
+  "request" : {
+    "url" : "/health",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK"
+  },
+  "uuid" : "58928f16-d1d6-4f6b-8a88-749b1b3785a2"
+},
+{
+  "id" : "58f34071-f424-45ff-bd70-74d2bed9a149",
+  "request" : {
+    "url" : "/ping",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK"
+  },
+  "uuid" : "58f34071-f424-45ff-bd70-74d2bed9a149"
+}]
